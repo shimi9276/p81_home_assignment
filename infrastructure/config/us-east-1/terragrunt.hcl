@@ -7,7 +7,7 @@ remote_state {
   }
 
   config = {
-    bucket  = "p81-tfstates-shimiw"
+    bucket  = "p81-tfstates-shimi"
     key     = "${basename(get_terragrunt_dir())}/terraform.tfstate"
     region  = "us-east-1"
     encrypt = true
