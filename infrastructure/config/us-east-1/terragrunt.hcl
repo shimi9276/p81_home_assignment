@@ -33,9 +33,8 @@ EOF
 }
 
 inputs = {
-  bucket_name                           = "p81-content-bucket-shimiw"
+  bucket_name                           = "p81-content-bucket-shimi"
   cloudfront_origin_access_control_name = "cloudfront-access-s3"
-  force_destroy                         = true
   cloudfront_description                = "p81-home-assignment-ShimiW"
 }
 
