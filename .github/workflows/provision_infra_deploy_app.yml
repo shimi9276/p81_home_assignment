@@ -45,7 +45,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           TF_LOG: error
 
-
       - name: Terragrunt Get Cloudfront URL
         uses: gruntwork-io/terragrunt-action@v2
         id: tg_cf_url
@@ -80,6 +79,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           BUCKET: ${{ needs.infra.outputs.bucket }}
           CF_URL: "https://${{ needs.infra.outputs.url }}"
-
         run: |
           python app/main.py  
